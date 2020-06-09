@@ -644,8 +644,6 @@ position: absolute;
   transition: transform 1350ms 675ms linear, opacity 675ms 1125ms linear;
   transition: transform 1350ms 675ms linear, opacity 675ms 1125ms linear, -webkit-transform 1350ms 675ms linear;
 
-  -webkit-animation: text-flicker-in-glow 4s linear both;
-  animation: text-flicker-in-glow 4s linear both;
 
 }
 
@@ -876,8 +874,7 @@ position: absolute;
   margin-top: 14%;
   margin-bottom: -20px;
   margin-left: 55%;
-  -webkit-animation: text-flicker-in-glow 4s linear both;
-  animation: text-flicker-in-glow 4s linear both;
+
 }
 .title__line {
   display: inline-block;
@@ -989,8 +986,7 @@ position: absolute;
   -o-transition: transform 1125ms cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 1125ms cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: transform 1125ms cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 1125ms cubic-bezier(0.165, 0.84, 0.44, 1);
-	-webkit-animation: text-flicker-in-glow 4s linear both;
-	        animation: text-flicker-in-glow 4s linear both;
+
 
 }
 .button:before, .button:after, .button__hover {
