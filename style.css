@@ -3,15 +3,17 @@
     -webkit-backface-visibility: hidden;
 }
 
-html {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1vw;
-    overflow: hidden;
-}
+
 
 
 
 @media (min-width:701px) {
+    html {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1vw;
+        overflow: hidden;
+       
+    }
     body,
     .wrap {
         height: 100vh;
@@ -291,7 +293,7 @@ html {
         -webkit-transform: translate3d(-55%, -40%, 0);
         transform: translate3d(-55%, -40%, 0);
         z-index: 2;
-        opacity: 0;
+        opacity: 0.7;
     }
     .card__slide:nth-child(1).active .image {
         opacity: 1;
@@ -1209,10 +1211,20 @@ html {
 
 
 @media (max-width:700px) {
-    body{
-        width: 600px;  
+    html {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1vw;
+       height: 120%;
+       
     }
+
+    body{
+        
+    }
+
     .wrap {
+
+       
     }
     .back {
     
@@ -1461,39 +1473,21 @@ html {
     }
     .card__slide:nth-child(1) .image {
         background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4530986/autonomous-networks-1440x1105.png");
-        background-size: 100% auto;
+        background-size: 200% auto;
         background-position: center;
         background-repeat: no-repeat;
-        width: 70%;
-        height: 150%;
+        width: 100%;
+        height: 100%;
         position: absolute;
-        top: 50%;
-        left: 25%;
-        -webkit-transform: translate3d(-55%, -40%, 0);
-        transform: translate3d(-55%, -40%, 0);
         z-index: 2;
         opacity: 0;
     }
     .card__slide:nth-child(1).active .image {
         opacity: 1;
-        -webkit-animation: blink-1 8s 1s infinite both;
-        animation: blink-1 8s 1s infinite both;
-        -webkit-transform: translate3d(-50%, -50%, 0);
-        transform: translate3d(-50%, -50%, 0);
-        -webkit-transition: opacity 675ms 2250ms linear, -webkit-transform 2700ms 2250ms cubic-bezier(0.165, 0.84, 0.44, 1);
-        transition: opacity 675ms 2250ms linear, -webkit-transform 2700ms 2250ms cubic-bezier(0.165, 0.84, 0.44, 1);
-        -o-transition: transform 2700ms 2250ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 675ms 2250ms linear;
-        transition: transform 2700ms 2250ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 675ms 2250ms linear;
-        transition: transform 2700ms 2250ms cubic-bezier(0.165, 0.84, 0.44, 1), opacity 675ms 2250ms linear, -webkit-transform 2700ms 2250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      
     }
     .card__slide:nth-child(1).exit .image {
-        -webkit-transform: translate3d(-45%, -60%, 0);
-        transform: translate3d(-45%, -60%, 0);
-        -webkit-transition: opacity 675ms 1125ms linear, -webkit-transform 1350ms 675ms linear;
-        transition: opacity 675ms 1125ms linear, -webkit-transform 1350ms 675ms linear;
-        -o-transition: transform 1350ms 675ms linear, opacity 675ms 1125ms linear;
-        transition: transform 1350ms 675ms linear, opacity 675ms 1125ms linear;
-        transition: transform 1350ms 675ms linear, opacity 675ms 1125ms linear, -webkit-transform 1350ms 675ms linear;
+    
     }
     .card__slide:nth-child(1):after {
         content: "";
@@ -1516,11 +1510,9 @@ html {
         background-size: 100% auto;
         background-position: center;
         background-repeat: no-repeat;
-        width: 100vw;
+        width: 100%;
         height: 100%;
         position: absolute;
-        top: 5%;
-        left: -5vw;
         z-index: 2;
         opacity: 0;
         pointer-events: none;
@@ -1536,15 +1528,12 @@ html {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 120%;
         /* 
          background-image: url("https://raw.githubusercontent.com/Azimolab/std_ld/master/assets/Fundo_1920x1080px_v5.png");
         
         */
         background-color: #C9C3C4; 
-        background-size: 100% auto;
-        background-position: center;
-        background-repeat: no-repeat;
         z-index: 1;
         opacity: 0;
         -webkit-transform: translatey(0);
@@ -1849,15 +1838,14 @@ html {
     }
     .title {
         color: #ffffff;
-        font-size: 2.8rem;
+        font-size: 10rem;
         font-family: 'Open Sans', sans-serif;
         font-weight: 900;
         line-height: 1.15;
         letter-spacing: 0.04em;
-        text-align: left;
+        text-align: center;
         margin-top: 14%;
-        margin-bottom: -20px;
-        margin-left: 55%;
+       
     }
     .title__line {
         display: inline-block;
@@ -1899,7 +1887,7 @@ html {
         font-weight: 700;
     }
     .desc {
-        font-size: 1.3rem;
+        font-size: 4rem;
         font-family: 'Open Sans', sans-serif;
         font-style: italic;
         font-weight: bold;
@@ -1911,11 +1899,10 @@ html {
         display: inline-flex;
         text-align: left;
         margin-top: 0%;
-        margin-left: 55%;
-        max-width: 50%;
+
     }
     .desc2 {
-        font-size: 1.4rem;
+        font-size: 4rem;
         font-family: 'Open Sans', sans-serif;
         font-style: italic;
         font-weight: bold;
@@ -1926,9 +1913,8 @@ html {
         display: -ms-flexbox;
         display: flex;
         text-align: left;
-        margin-left: 55%;
-        margin-bottom: 0px;
-        max-width: 40%;
+        margin-bottom: 5px;
+        
         height: 5%;
         -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1940,20 +1926,20 @@ html {
     .button {
         background: rgba(0, 0, 0, 0.2);
         display: relative;
-        font-size: 1.6rem;
+        font-size: 7rem;
         font-family: 'Open Sans', sans-serif;
         text-transform: uppercase;
-        margin-left: 55%;
+        margin-left: 26%;
         font-style: italic;
         font-weight: bold;
         line-height: 1;
-        font-weight: 600;
+        font-weight: 800;
         padding: 0.5rem 1rem;
         cursor: pointer;
         position: relative;
         z-index: 5;
         color: #ffffff;
-        border: 0.2rem solid white;
+        border: 1rem solid white;
         -webkit-box-shadow: 0 1rem 2rem rgba(23, 13, 20, 0.2);
         box-shadow: 0 1rem 2rem rgba(23, 13, 20, 0.2);
         -webkit-transition: -webkit-transform 1125ms cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -2045,7 +2031,7 @@ html {
     .desc,
     .desc2,
     .button-wrap {
-        margin-top: 3%;
+        margin-top: 10%;
         opacity: 0;
         -webkit-transform: translatey(2.5rem);
         -ms-transform: translatey(2.5rem);
@@ -2063,6 +2049,7 @@ html {
     }
     /* PRE WORK */
     .page-content {
+        touch-action: auto;
         position: absolute;
         font-family: "Open Sans";
         opacity: 0;
@@ -2201,7 +2188,7 @@ html {
         font-family: "Open Sans";
         opacity: 0;
         width: 100%;
-        height: 200%;
+        height: 100%;
         left: 0%;
         top: 8%;
         opacity: 0;
